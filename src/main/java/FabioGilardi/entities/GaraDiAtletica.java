@@ -10,7 +10,7 @@ public class GaraDiAtletica extends Event {
 
     //    METHODS
     @ManyToMany
-    @JoinTable(name = "partecipanti_atletica", joinColumns = @JoinColumn(name = "event_id"), inverseJoinColumns = @JoinColumn(name = "person_id"))
+    @JoinTable(name = "atletica_persona", joinColumns = @JoinColumn(name = "event_id"), inverseJoinColumns = @JoinColumn(name = "person_id"))
     private Set<Person> atleti;
     @ManyToOne
     @JoinColumn(name = "persona_id")
